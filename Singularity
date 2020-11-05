@@ -38,6 +38,7 @@ From: tpall/singularity-r:4.0.3
     cowplot \
     patchwork \
     viridisLite \
-    brms \
     tidybayes \
-    here
+    here \
+   && installGithub.r stan-dev/rstan \
+   && install2.r --deps TRUE --skipinstalled brms
