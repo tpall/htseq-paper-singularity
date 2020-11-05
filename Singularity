@@ -40,5 +40,5 @@ From: tpall/singularity-r:4.0.3
     viridisLite \
     tidybayes \
     here \
-   && installGithub.r stan-dev/rstan \
-   && install2.r --deps TRUE --skipinstalled brms
+  && installGithub.r stan-dev/rstan \
+  && install2.r --deps TRUE --skipinstalled brms
