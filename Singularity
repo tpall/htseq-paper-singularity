@@ -40,5 +40,6 @@ From: tpall/singularity-r:4.0.3
     viridisLite \
     tidybayes \
     here \
-  && installGithub.r stan-dev/rstan \
+    remotes \
+  && Rscript -e 'remotes::install_github("stan-dev/rstan", ref = "develop", subdir = "rstan/rstan", build_opts = "")' \
   && install2.r --deps TRUE --skipinstalled brms
