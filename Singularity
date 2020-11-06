@@ -25,6 +25,7 @@ From: tpall/singularity-r:4.0.3
     jags \
     libharfbuzz-dev \
     libfribidi-dev \
+    git \
   && install2.r --deps TRUE \
     --skipinstalled \
     readr \
